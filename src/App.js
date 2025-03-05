@@ -9,7 +9,7 @@ function App() {
         style={{ borderRadius: "50%" }}
       />
       <h2>Sobre mí</h2>
-      <p>Soy un [tu profesión] con experiencia en [tus habilidades].</p>
+      <p>Soy un ingeniero electronico con experiencia en [tus habilidades].</p>
       <h2>Contacto</h2>
       <p>Email: tuemail@example.com</p>
       <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">linkedin.com/in/tuusuario</a></p>
