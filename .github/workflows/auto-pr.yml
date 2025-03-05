@@ -1,0 +1,23 @@
+name: Auto PR to Main
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          base: main
+          branch: dev
+          title: "Auto PR: Merge dev into main"
+          body: "Este PR se creó automáticamente cuando se hizo push a dev."
+          draft: false
